@@ -8,7 +8,6 @@ export const Stepper = ({ steps }: StepperProps) => {
     <Container>
       <StepperWrapper>
         <ConnectingLine />
-        
         {steps.map((step) => (
           <StepContainer key={step.id}>
             <StepIndicator $active={step.active} $completed={step.completed}>
